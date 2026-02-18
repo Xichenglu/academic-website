@@ -123,3 +123,15 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+
+/* Visitor map */
+#clustrmaps-widget {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+code {
+  background: #f2f2f2;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
