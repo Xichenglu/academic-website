@@ -3,132 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Academic Website</title>
-  <!-- Link to the stylesheet -->
+  <title>Xicheng Lu | Academic Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hero section with gradient background and navigation -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Xicheng Lu</h1>
-      <!-- Updated tagline with research focus -->
-      <p>PhD student with research interests in low‑bit quantization, phase retrieval and array signal processing.</p>
-    </div>
-    <nav class="navbar">
+  <header class="hero" id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#top">Xicheng Lu</a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#experience">Experience &amp; Awards</a></li>
-        <!-- Add a navigation link to the visitor map so visitors can jump directly to the map section -->
         <li><a href="#visitor-map">Visitor Map</a></li>
-        <!-- Contact link remains last and directs to the contact section -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">PhD Student · QMUL</p>
+      <h1>Xicheng Lu</h1>
+      <p>
+        Researching low-bit quantization, phase retrieval, and array signal processing.
+      </p>
+      <div class="hero-cta">
+        <a class="button" href="#publications">View Publications</a>
+      </div>
+    </div>
   </header>
 
-  <!-- About section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      Xicheng Lu received the B.Sc. degree in electrical engineering from <strong>Fuzhou University</strong>, China, in 2020, and the M.Sc. degree in electronic and electrical engineering from the <strong>University of Sheffield</strong>, U.K., in 2022. He is currently working toward the Ph.D. degree with the School of Electronic Engineering and Computer Science, <strong>Queen Mary University of London</strong>, U.K.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="section card">
+      <h2>About Me</h2>
+      <p>
+        I received the B.Sc. degree in electrical engineering from <strong>Fuzhou University</strong>, China, in 2020, and the M.Sc. degree in electronic and electrical engineering from the <strong>University of Sheffield</strong>, U.K., in 2022. I am currently pursuing the Ph.D. degree with the School of Electronic Engineering and Computer Science, <strong>Queen Mary University of London</strong>, U.K.
+      </p>
+    </section>
 
-  <!-- Research section -->
-  <section id="research" class="section">
-    <h2>Research Interests</h2>
-    <p>
-      His research interests include low‑bit quantization, phase retrieval and array signal processing.
-    </p>
-  </section>
+    <section id="research" class="section card">
+      <h2>Research Interests</h2>
+      <div class="chips" role="list" aria-label="Research topics">
+        <span class="chip" role="listitem">Low-bit Quantization</span>
+        <span class="chip" role="listitem">Phase Retrieval</span>
+        <span class="chip" role="listitem">Array Signal Processing</span>
+      </div>
+    </section>
 
-  <!-- Publications section -->
-  <section id="publications" class="section">
-    <h2>Selected Publications</h2>
-    <ul>
-      <li>
-        A 1.5‑Bit Quantization Scheme and Its Application to Direction Estimation,
-        <strong>X.&nbsp;Lu</strong>, W.&nbsp;Liu and A.&nbsp;Alomainy, <em>IEEE Transactions on Signal Processing</em>, vol.&nbsp;73,
-        pp.&nbsp;4364–4378, 2025.
-        <a href="https://doi.org/10.1109/TSP.2025.3604889" target="_blank">doi:10.1109/TSP.2025.3604889</a>
-      </li>
-      <li>
-        DOA Estimation with Sparse Bayesian Learning Using Hierarchical Half‑Cauchy Prior with Spectra Refinement Strategy,
-        Z.&nbsp;Chen, <strong>X.&nbsp;Lu</strong>, Y.&nbsp;Huang, D.&nbsp;Li, W.&nbsp;Liu, S.&nbsp;Hong and H.&nbsp;Sun,
-        <em>IEEE Transactions on Aerospace and Electronic Systems</em>, vol.&nbsp;61, no.&nbsp;5,
-        pp.&nbsp;12059–12074, 2025.
-        <a href="https://doi.org/10.1109/TAES.2025.3571860" target="_blank">doi:10.1109/TAES.2025.3571860</a>
-      </li>
-      <li>
-        A 3‑D Multi‑Precision Scalable Systolic FMA Architecture,
-        H.&nbsp;Liu, <strong>X.&nbsp;Lu</strong>, X.&nbsp;Yu, K.&nbsp;Li, K.&nbsp;Yang, H.&nbsp;Xia, S.&nbsp;Li and T.&nbsp;Deng,
-        <em>IEEE Transactions on Circuits and Systems I: Regular Papers</em>, vol.&nbsp;72, no.&nbsp;1,
-        pp.&nbsp;265–276, Jan. 2025.
-      </li>
-    </ul>
-    <p>
-      For a full list of my publications, please visit my
-      <a href="https://scholar.google.com/citations?user=CYlAmy4AAAAJ" target="_blank"
-        >Google Scholar profile</a
-      >.
-    </p>
-  </section>
+    <section id="publications" class="section card">
+      <h2>Selected Publications</h2>
+      <ul class="publication-list">
+        <li>
+          <p>
+            A 1.5-Bit Quantization Scheme and Its Application to Direction Estimation,
+            <strong>X. Lu</strong>, W. Liu and A. Alomainy, <em>IEEE Transactions on Signal Processing</em>, vol. 73,
+            pp. 4364–4378, 2025.
+          </p>
+          <a href="https://doi.org/10.1109/TSP.2025.3604889" target="_blank" rel="noopener noreferrer">doi:10.1109/TSP.2025.3604889</a>
+          ·
+          <a href="https://github.com/Xichenglu/1.5-bit-and-multi-bit-correlation-estimator-and-DOA-estimation" target="_blank" rel="noopener noreferrer">Code (MATLAB)</a>
+        </li>
+        <li>
+          <p>
+            DOA Estimation with Sparse Bayesian Learning Using Hierarchical Half-Cauchy Prior with Spectra Refinement Strategy,
+            Z. Chen, <strong>X. Lu</strong>, Y. Huang, D. Li, W. Liu, S. Hong and H. Sun,
+            <em>IEEE Transactions on Aerospace and Electronic Systems</em>, vol. 61, no. 5,
+            pp. 12059–12074, 2025.
+          </p>
+          <a href="https://doi.org/10.1109/TAES.2025.3571860" target="_blank" rel="noopener noreferrer">doi:10.1109/TAES.2025.3571860</a>
+        </li>
+        <li>
+          <p>
+            A 3-D Multi-Precision Scalable Systolic FMA Architecture,
+            H. Liu, <strong>X. Lu</strong>, X. Yu, K. Li, K. Yang, H. Xia, S. Li and T. Deng,
+            <em>IEEE Transactions on Circuits and Systems I: Regular Papers</em>, vol. 72, no. 1,
+            pp. 265–276, Jan. 2025.
+          </p>
+        </li>
+      </ul>
+      <p>
+        For a full list of publications, please visit my
+        <a href="https://scholar.google.com/citations?user=CYlAmy4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.
+      </p>
+    </section>
 
-  <!-- Experience and Awards section -->
-  <section id="experience" class="section">
-    <h2>Working Experience</h2>
-    <ul>
-      <li><strong>Queen Mary University of London, EECS Department</strong>, Research Assistant — Nov 2024 – Dec 2024</li>
-      <li><strong>Queen Mary University of London, EECS Department</strong>, Research Assistant — May 2024 – Sep 2024</li>
-      <li><strong>Xiamen Silan Advanced Compound Semiconductor Co., Ltd.</strong>, Intern, GaN Chip R&D Department — Oct 2022 – Jan 2023</li>
-      <li><strong>Vanderlande Industries, Shanghai</strong>, Assistant Field Engineer — Jul 2018 – Aug 2018</li>
-    </ul>
-    <h2>Awards</h2>
-    <ul>
-      <li>IEEE Circuits and Systems Society Student Travel Grant, 2025</li>
-      <li>IEEE Circuits and Systems Society Volunteer Honorarium (SiPS 2025), 2025</li>
-      <li>EECS Fees Waiver Award, Queen Mary University of London, 2024</li>
-    </ul>
-  </section>
+    <section id="experience" class="section card">
+      <h2>Experience &amp; Awards</h2>
+      <div class="columns">
+        <div>
+          <h3>Working Experience</h3>
+          <ul>
+            <li><strong>Queen Mary University of London, EECS Department</strong>, Research Assistant — Nov 2024 – Dec 2024</li>
+            <li><strong>Queen Mary University of London, EECS Department</strong>, Research Assistant — May 2024 – Sep 2024</li>
+            <li><strong>Xiamen Silan Advanced Compound Semiconductor Co., Ltd.</strong>, Intern, GaN Chip R&amp;D Department — Oct 2022 – Jan 2023</li>
+            <li><strong>Vanderlande Industries, Shanghai</strong>, Assistant Field Engineer — Jul 2018 – Aug 2018</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Awards</h3>
+          <ul>
+            <li>IEEE Circuits and Systems Society Student Travel Grant, 2025</li>
+            <li>IEEE Circuits and Systems Society Volunteer Honorarium (SiPS 2025), 2025</li>
+            <li>EECS Fees Waiver Award, Queen Mary University of London, 2024</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <section id="visitor-map" class="section card">
+      <h2>Visitor Map</h2>
+      <p>
+        A live visitor map is shown below (powered by ClustrMaps). The <code>noscript</code> fallback keeps a static map visible when JavaScript is disabled.
+      </p>
+      <div class="map-wrap">
+        <script
+          type="text/javascript"
+          id="clustrmaps"
+          src="https://clustrmaps.com/map_v2.js?d=l8HEJhyJAXrLMGIitvLuNK4h1OetgfdydytZIF7whl8&cl=ffffff&w=a"
+        ></script>
+        <noscript>
+          <a href="https://clustrmaps.com/site/1c99v" title="ClustrMaps">
+            <img
+              src="https://www.clustrmaps.com/map_v2.png?d=l8HEJhyJAXrLMGIitvLuNK4h1OetgfdydytZIF7whl8&cl=ffffff"
+              alt="Visitor Map"
+            />
+          </a>
+        </noscript>
+      </div>
+    </section>
 
-  <!-- Removed CV section -->
-
-  <!-- Contact section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>
-      Email:
-      <a href="mailto:xicheng.lu@qmul.ac.uk">xicheng.lu@qmul.ac.uk</a>
-    </p>
-    <p>Location: London, UK</p>
-  </section>
-
-  <!-- Visitor map section -->
-  <section id="visitor-map" class="section">
-    <h2>Visitor Map</h2>
-    <p>
-      A live visitor map is shown below (powered by ClustrMaps). The <code>noscript</code> fallback ensures
-      that a static map image is shown even when JavaScript is disabled or blocked.
-    </p>
-    <!-- ClustrMaps embed: interactive visitor map -->
-    <script
-      type="text/javascript"
-      id="clustrmaps"
-      src="https://clustrmaps.com/map_v2.js?d=l8HEJhyJAXrLMGIitvLuNK4h1OetgfdydytZIF7whl8&cl=ffffff&w=a"
-    ></script>
-    <noscript>
-      <a href="https://clustrmaps.com/site/1c99v" title="ClustrMaps">
-        <img
-          src="https://www.clustrmaps.com/map_v2.png?d=l8HEJhyJAXrLMGIitvLuNK4h1OetgfdydytZIF7whl8&cl=ffffff"
-          alt="Visitor Map"
-        />
-      </a>
-    </noscript>
-  </section>
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:xicheng.lu@qmul.ac.uk">xicheng.lu@qmul.ac.uk</a></p>
+      <p>Location: London, UK</p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2026 Xicheng Lu. All rights reserved.</p>
